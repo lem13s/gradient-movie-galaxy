@@ -14,7 +14,7 @@ export const MovieCard = ({ title, year, studio, tags, gradient, className }: Mo
     <div className={cn("group", className)}>
       <div className="movie-card relative mb-3">
         <div className="movie-card-glow" style={{ background: gradient }} />
-        <div className="relative aspect-[2/3] w-full overflow-hidden rounded-[2rem] p-4">
+        <div className="relative aspect-[2/3] w-full overflow-hidden rounded-[1rem] p-4">
           <div 
             className="absolute inset-0 z-0" 
             style={{ 

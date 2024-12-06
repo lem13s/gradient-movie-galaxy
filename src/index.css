@@ -23,7 +23,7 @@
     --border: 0 0% 13%;
     --input: 0 0% 13%;
     --ring: 0 0% 63%;
-    --radius: 1rem;
+    --radius: 0.8rem;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   .movie-card-glow {
-    @apply absolute -inset-1 rounded-[2rem] opacity-0 blur transition-opacity duration-300;
+    @apply absolute -inset-1 rounded-[1rem] opacity-0 blur transition-opacity duration-300;
   }
 
   .movie-card:hover .movie-card-glow {
@@ -60,7 +60,7 @@
   }
 
   .tag {
-    @apply rounded-[0.75rem] px-3 py-1 text-xs font-medium bg-white/10 text-white/80 transition-colors hover:bg-white/20;
+    @apply rounded-[0.6rem] px-3 py-1 text-xs font-medium bg-white/10 text-white/80 transition-colors hover:bg-white/20;
   }
 }
 

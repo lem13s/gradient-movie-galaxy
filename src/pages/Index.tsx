@@ -59,10 +59,10 @@ const Index = () => {
     <div className="min-h-screen bg-background pb-20">
       <Header />
       
-      <main className="container mx-auto px-4 pt-24">
-        <section className="mb-12">
-          <h2 className="mb-6 text-2xl font-bold">Recommended Movies & Series</h2>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+      <main className="container mx-auto max-w-[1920px] px-8 pt-28">
+        <section className="mb-16">
+          <h2 className="mb-8 text-2xl font-bold">Recommended Movies & Series</h2>
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6">
             {MOVIES.map((movie) => (
               <MovieCard key={movie.title} {...movie} />
             ))}
@@ -70,8 +70,8 @@ const Index = () => {
         </section>
 
         <section>
-          <h2 className="mb-6 text-2xl font-bold">Recommended Videos</h2>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <h2 className="mb-8 text-2xl font-bold">Recommended Videos</h2>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {VIDEOS.map((video) => (
               <VideoCard key={video.title} {...video} />
             ))}
