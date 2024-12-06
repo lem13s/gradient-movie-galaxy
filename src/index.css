@@ -39,7 +39,7 @@
 
 @layer components {
   .movie-card {
-    @apply relative overflow-hidden rounded-2xl bg-card transition-all duration-300 hover:animate-card-hover;
+    @apply relative overflow-hidden transition-all duration-300 hover:animate-card-hover;
   }
 
   .movie-card::before {
@@ -52,18 +52,36 @@
   }
 
   .movie-card-glow {
-    @apply absolute -inset-1 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 blur transition-opacity duration-300;
+    @apply absolute -inset-1 rounded-[2rem] opacity-0 blur transition-opacity duration-300;
   }
 
   .movie-card:hover .movie-card-glow {
     @apply opacity-75;
   }
 
-  .header-gradient {
-    @apply bg-gradient-to-b from-white/10 to-transparent rounded-b-[2rem];
-  }
-
   .tag {
-    @apply rounded-full px-3 py-1 text-xs font-medium bg-white/10 text-white/80 transition-colors hover:bg-white/20;
+    @apply rounded-[0.75rem] px-3 py-1 text-xs font-medium bg-white/10 text-white/80 transition-colors hover:bg-white/20;
   }
+}
+
+/* SF Pro Display Font */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
