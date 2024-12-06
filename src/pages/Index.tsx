@@ -56,11 +56,11 @@ const VIDEOS = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="min-h-screen bg-background pb-20 w-screen overflow-x-hidden">
       <Header />
       
-      <main className="container mx-auto max-w-[1920px] px-8 pt-28">
-        <section className="mb-16">
+      <main className="w-screen px-8 pt-28">
+        <section className="mb-16 max-w-[1920px] mx-auto">
           <h2 className="mb-8 text-2xl font-bold">Recommended Movies & Series</h2>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6">
             {MOVIES.map((movie) => (
@@ -69,11 +69,11 @@ const Index = () => {
           </div>
         </section>
 
-        <section>
+        <section className="max-w-[1920px] mx-auto">
           <h2 className="mb-8 text-2xl font-bold">Recommended Videos</h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {VIDEOS.map((video) => (
-              <VideoCard key={video.title} {...video} />
+              <VideoCard key={video.title} {...video} className="max-w-[400px]" />
             ))}
           </div>
         </section>
